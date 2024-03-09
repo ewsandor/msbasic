@@ -25,6 +25,10 @@ AIM65 := 1
 .elseif .def(sym1)
 SYM1 := 1
 .include "defines_sym1.s"
+.elseif .def(eater6502)
+EATER6502 := 1
+APPLE := 1 ; Using Apple as reference implementation for now
+.include "defines_eater6502.s"
 .endif
 
 .ifdef CONFIG_2C
